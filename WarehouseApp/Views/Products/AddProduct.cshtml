@@ -1,0 +1,68 @@
+﻿@model WarehouseApp.Models.NewProductVM
+@{
+    ViewData["Title"] = "Add a new product";
+}
+
+<div class="text-center">
+    <br />
+    <h1 class="display-4">Add a new product</h1>
+    <br />
+    <br />
+</div>
+<div class="d-flex justify-content-center">
+    <form action="/Products/AddProduct" enctype="multipart/form-data" method="post">
+        <div class="form-group" style="width: 40rem;">
+            <label for="name">Name</label>
+            @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Name, new { @placeholder = "Name", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="buy_price">Buy Price (in euro)</label>
+            @Html.ValidationMessageFor(m => m.BuyPrice, null, new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.BuyPrice, new { @placeholder = "Buy Price", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="sell_price">Sell Price (in euro)</label>
+            @Html.ValidationMessageFor(m => m.SellPrice, null, new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.SellPrice, new { @placeholder = "Sell Price", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="quantity">Quantity (units)</label>
+            @Html.ValidationMessageFor(m => m.Quantity, null, new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Quantity, new { @placeholder = "Quantity", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="category">Category</label>
+            @Html.DropDownListFor(m => m.Category, new List<SelectListItem>
+                    {
+                          new SelectListItem { Text = "Хранителни стоки", Value = "Хранителни стоки", Selected=true},
+                          new SelectListItem { Text = "Канцеларски материали", Value = "Канцеларски материали"},
+                          new SelectListItem { Text = "Строителни материали", Value = "Строителни материали"}
+                    }, new { @style = "width:40rem", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="code">Code</label>
+            @Html.ValidationMessageFor(m => m.Code, null, new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Code, new { @placeholder = "Code", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="description">Description</label>
+            @Html.TextAreaFor(m => m.Description, new {@placeholder="Description",@style= "resize: none; height: 10rem;", @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 40rem;">
+            <label for="image">Image</label>
+            @Html.TextBoxFor(m => m.Image, new { @class= "control-fileupload", @type = "file",@accept= "image/png, image/jpg, image/jpeg" })
+        </div>
+        <div class="form-group">
+            @Html.ValidationMessage("NameValidation", null, new { @class = "text-danger" })
+            @Html.ValidationMessage("BPValidation", null, new { @class = "text-danger" })
+            @Html.ValidationMessage("SPValidation", null, new { @class = "text-danger" })
+            @Html.ValidationMessage("QuantityValidation", null, new { @class = "text-danger" })
+            @Html.ValidationMessage("CodeValidation", null, new { @class = "text-danger" })
+            @Html.ValidationMessage("DescriptionValidation", null, new { @class = "text-danger" })
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </form>
+</div>

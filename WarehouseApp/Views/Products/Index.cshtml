@@ -1,0 +1,198 @@
+﻿@model WarehouseApp.Models.InventorySearchVM
+@{
+    ViewData["Title"] = "Inventory";
+}
+
+<div class="text-center">
+    <h3 class="display-7">Perform an inventory search here.</h3>
+    <br />
+</div>
+<div class="d-flex justify-content-center">
+    <form class="form-inline mr-auto" action="/Products/Index" method="POST">
+        @Html.HiddenFor(m => m.page)
+        @Html.HiddenFor(m => m.pages)
+        @Html.HiddenFor(m => m.all_products)
+        @Html.TextBoxFor(m => m.Name, new { @style = "width:30rem; margin-left:20px", @placeholder = "Search", @class = "form-control mr-sm-2" })
+        @Html.DropDownListFor(m => m.Category, new List<SelectListItem>
+                            {
+                                  new SelectListItem { Text = "Всички", Value = "Всички", Selected=true},
+                                  new SelectListItem { Text = "Хранителни стоки", Value = "Хранителни стоки"},
+                                  new SelectListItem { Text = "Канцеларски материали", Value = "Канцеларски материали"},
+                                  new SelectListItem { Text = "Строителни материали", Value = "Строителни материали"}
+                            }, new { @style = "width:15rem", @class = "form-control mr-sm2" })
+        @Html.TextBoxFor(m => m.Code, new { @style = "width:8rem; margin-left:8px", @placeholder = "Code", @class = "form-control mr-sm-2" })
+        <button class="btn btn-unique btn-rounded my-0" style="background-color: lightgrey;" type="submit">Search</button>
+    </form>
+</div>
+<br />
+
+<div class="modal" id="delPopup" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Този продукт ще бъде изтрит! Желаете ли да продължите?</h5>
+                <button type="button" class="close" data-dismiss="modal" onclick="ClosePopup()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="DeleteProduct()">Да</button>
+                <button type="button" class="btn btn-secondary" onclick="ClosePopup()" data-dismiss="modal">Не</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Buy Price</th>
+            <th scope="col">Sell Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Category</th>
+            <th scope="col">Image</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if (Model != null && Model.products != null)
+            {
+                if (Model.products.Count > 0)
+                {
+                    for (int i = 0; i < Model.products.Count; i++)
+                    {
+                        if (Model.products.ElementAt(i) != null)
+                        {
+                            <tr>
+                                <td>@Model.products.ElementAt(i).Code</td>
+                                <td>@Model.products.ElementAt(i).Name</td>
+                                <td>@Model.products.ElementAt(i).Description</td>
+                                <td>@Model.products.ElementAt(i).BuyPrice</td>
+                                <td>@Model.products.ElementAt(i).SellPrice</td>
+                                <td>@Model.products.ElementAt(i).Quantity</td>
+                                <td>@Model.products.ElementAt(i).Category</td>
+                                <td><input type="image" src="~/Images/img_icon.png" Onclick="showImage('@Model.products.ElementAt(i).Name', '@Model.products.ElementAt(i).Code')" name="show_image" width="40" height="40" /></td>
+                                <td><a href="/Products/EditProduct?code=@Model.products.ElementAt(i).Code&searchName=@Model.Name&searchCode=@Model.Code&searchCategory=@Model.Category&page=@Model.page&pages=@Model.pages"><img src="~/Images/edit_icon.png" style="width:40px;height:40px;"></a></td>
+                                <td><input type="image" src="~/Images/del_icon.png" Onclick="DeletePopup('@Model.products.ElementAt(i).Code.ToString()')" name="delete" width="40" height="40" /></td>
+                            </tr>
+                        }
+                    }
+                }
+            }
+
+
+        }
+    </tbody>
+</table>
+
+@{
+    if (Model != null && Model.products != null)
+    {
+        if (Model.products.Count == 0 || (Model.products.Count == 1 && Model.products.ElementAt(0) == null))
+        {
+            <br />
+            <br />
+            <p class="text-center font-weight-bold" style="color:gray; font-size:30px;">Няма намерени продукти</p>
+            <br />
+        }
+
+        if (Model.products.Count < Model.all_products.Count)
+        {
+            <div class="d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="/Products/Index?searchName=@Model.Name&searchCategory=@Model.Category&searchCode=@Model.Code&page=@Model.page&pages=@Model.pages&prevPage=True" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        @for (int i = 1; i <= Model.pages; i++)
+                        {
+                            if (Model.page == i)
+                            {
+                                //color the background of the page number to indicate that you are on this page
+                                <li class="page-item"><a class="page-link" style="background-color: aquamarine" href="/Products/Index?searchName=@Model.Name&searchCategory=@Model.Category&searchCode=@Model.Code&page=@i&pages=@Model.pages">@i</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item"><a class="page-link" href="/Products/Index?searchName=@Model.Name&searchCategory=@Model.Category&searchCode=@Model.Code&page=@i&pages=@Model.pages">@i</a></li>
+                            }
+                        }
+                        <li class="page-item">
+                            <a class="page-link" href="/Products/Index?searchName=@Model.Name&searchCategory=@Model.Category&searchCode=@Model.Code&page=@Model.page&pages=@Model.pages&nextPage=True" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        }
+    }
+}
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="ImageModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="width: fit-content; height: fit-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ImageModalCenterTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImg" alt="No Image" class="w-150" style="max-width: 1000px; max-height: 800px" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<form id="deleteForm" action="/Products/DeleteProduct" method="post">
+    <input type="hidden" id="codeToDel" name="codeToDel">
+    @{
+        if (Model != null)
+        {
+            <input type="hidden" name="searchName" value="@Model.Name">
+            <input type="hidden" name="searchCategory" value="@Model.Category">
+            <input type="hidden" name="searchCode" value="@Model.Code">
+            <input type="hidden" name="page" value="@Model.page">
+            <input type="hidden" name="pages" value="@Model.pages">
+        }
+    }
+</form>
+
+<script>
+    //for deleting products
+    var productToDelCode = "";
+    function DeletePopup(delCode) {
+        var x = document.getElementById("delPopup");
+        x.style.display = "block";
+        productToDelCode = delCode;
+    }
+    function DeleteProduct() {
+        document.getElementById("codeToDel").value = productToDelCode;
+        document.getElementById("deleteForm").submit();
+    }
+    function ClosePopup() {
+        var x = document.getElementById("delPopup");
+        x.style.display = "none";
+        productToDelCode = "";
+    }
+
+    function showImage(name, code) {
+        var title = document.getElementById("ImageModalCenterTitle");
+        document.getElementById("modalImg").src = "/images/Product_Images/" + code + ".png";
+        title.innerHTML = name;
+        $("#imageModal").modal()
+    }
+</script>

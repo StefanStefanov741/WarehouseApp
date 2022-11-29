@@ -1,0 +1,42 @@
+﻿@model WarehouseApp.Models.LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <br />
+    <h1 class="display-4">Login</h1>
+    <br />
+    <br />
+</div>
+<div class="d-flex justify-content-center">
+    <form action="/Users/Login" method="post">
+        <div class="form-group" style="width: 22rem;">
+            <label for="username">Username</label>
+            @Html.TextBoxFor(m => m.Username,new {@class = "form-control"})
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            <label for="password">Password</label>
+            @Html.PasswordFor(m => m.Password,new {@class = "form-control"})
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+        </div>
+        <br />
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <br />
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessage("AuthenticationFailed", null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            <br />
+            <br />
+            <p>Don't have an account? <a href="/Users/Register">Create one from here!</a></p>
+        </div>
+    </form>
+</div>

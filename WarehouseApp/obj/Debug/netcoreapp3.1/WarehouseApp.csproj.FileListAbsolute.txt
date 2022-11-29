@@ -1,0 +1,102 @@
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.exe
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.deps.json
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.runtimeconfig.json
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.runtimeconfig.dev.json
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.pdb
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.Views.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.Views.pdb
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.AssemblyReference.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.AssemblyInfoInputs.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.AssemblyInfo.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.CoreCompileInputs.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorAssemblyInfo.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorAssemblyInfo.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\WarehouseApp.StaticWebAssets.Manifest.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\WarehouseApp.StaticWebAssets.xml
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\WarehouseApp.styles.css
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.TagHelpers.input.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.TagHelpers.output.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorCoreGenerate.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorTargetAssemblyInfo.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorTargetAssemblyInfo.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.Views.pdb
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.pdb
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.genruntimeconfig.cache
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.CopyComplete
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\AddProduct.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\EditProduct.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\linq2db.dll
+C:\Users\tetij\source\repos\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\appsettings.json
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.StaticWebAssets.xml
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.exe
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.deps.json
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.runtimeconfig.json
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.runtimeconfig.dev.json
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.pdb
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.Views.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\WarehouseApp.Views.pdb
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\linq2db.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.AssemblyReference.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.AssemblyInfoInputs.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.AssemblyInfo.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.CoreCompileInputs.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.MvcApplicationPartsAssemblyInfo.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorAssemblyInfo.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorAssemblyInfo.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\WarehouseApp.StaticWebAssets.Manifest.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\WarehouseApp.StaticWebAssets.Pack.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.WarehouseApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.WarehouseApp.props
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.WarehouseApp.props
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.WarehouseApp.props
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.TagHelpers.input.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.TagHelpers.output.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorCoreGenerate.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\AddProduct.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\EditProduct.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorTargetAssemblyInfo.cache
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.RazorTargetAssemblyInfo.cs
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.Views.pdb
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.csproj.CopyComplete
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.dll
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.pdb
+D:\CSharp projects\WarehouseApp\WarehouseApp\obj\Debug\netcoreapp3.1\WarehouseApp.genruntimeconfig.cache

@@ -1,0 +1,59 @@
+﻿@model WarehouseApp.Models.RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="text-center">
+    <br />
+    <h1 class="display-4">Register</h1>
+    <br />
+    <br />
+</div>
+<div class="d-flex justify-content-center">
+    <form action="/Users/Register" method="post">
+        <div class="form-group" style="width: 22rem;">
+            <label for="username">Username</label>
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            <label for="password">Password</label>
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            <label for="email">Email</label>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            <label for="phone">Phone</label>
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessageFor(m => m.Phone, null, new { @class = "text-danger" })
+        </div>
+        <br />
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessage("UsernameError", null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessage("PasswordError", null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessage("EmailError", null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group" style="width: 22rem;">
+            @Html.ValidationMessage("PhoneError", null, new { @class = "text-danger" })
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
